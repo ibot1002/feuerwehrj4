@@ -151,7 +151,9 @@ else
 			<div class="uk-width-expand@m">
 				<jdoc:include type="modules" name="breadcrumbs" style="none" />
 				<?php if ($this->countModules('main-top', true)) : ?>
-					<jdoc:include type="modules" name="main-top" style="html5" />
+					<?php if (Factory::getApplication()->input->get('option')=="com_content") : ?>
+						<jdoc:include type="modules" name="main-top" style="html5" />
+					<?php endif;?>
 				<?php endif;?>
 				<jdoc:include type="message" />
 				<main>
