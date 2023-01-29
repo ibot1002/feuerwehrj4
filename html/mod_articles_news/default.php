@@ -19,9 +19,11 @@ if (empty($list))
 {
 	return;
 }
-
+$template = JFactory::getApplication('site')->getTemplate(true);
+$slideshowRatio = $template->params->get('slideshowRatio');
+$slideshowIntervall = $template->params->get('slideshowIntervall');
 ?>
-<div class="uk-position-relative uk-margin-bottom" uk-slideshow="autoplay: true;autoplay-interval:3500">
+<div class="uk-position-relative uk-margin-bottom" uk-slideshow="ratio: <?php echo $slideshowRatio ?>; autoplay: true;autoplay-interval:<?php echo $slideshowIntervall ?>">
 <ul class="uk-slideshow-items">
 	<?php foreach ($list as $item) : ?>
 		<li itemscope itemtype="https://schema.org/Article">
