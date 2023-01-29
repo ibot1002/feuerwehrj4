@@ -57,6 +57,17 @@
 				<field name="siteDescription" type="text" default="" label="TPL_FEUERWEHRJ4_TAGLINE_LABEL" description="TPL_FEUERWEHRJ4_TAGLINE_DESC" filter="string" showon="brand:1" />
 				<field name="faviconFile" type="media" default="" label="TPL_FEUERWEHRJ4_FAVICON" description="TPL_FEUERWEHRJ4_FAVICON_DESC"/>
 				<field name="appletouchicon" type="media" default="" label="TPL_FEUERWEHRJ4_APPLE_TOUCH_ICON" description="TPL_FEUERWEHRJ4_APPLE_TOUCH_ICON_DESC"/>
+				<field type="spacer" name="myspacer" label="Slideshow parameters" />
+				<field name="overlaySlideshowPosition" type="list" label="TPL_FEUERWEHRJ4_SLIDESHOW-OVERLAY-POSITION" >
+					<option value="uk-position-top">TPL_FEUERWEHRJ4_SLIDESHOW-OVERLAY-POSITION-TOP</option>
+					<option value="uk-position-bottom">TPL_FEUERWEHRJ4_SLIDESHOW-OVERLAY-POSITION-BOTTOM</option>
+				</field>
+				<field name="overlaySlideshowMove" type="list" label="TPL_FEUERWEHRJ4_SLIDESHOW-OVERLAY-MOVE" >
+					<option value="uk-transition-slide-top">TPL_FEUERWEHRJ4_SLIDESHOW-OVERLAY-MOVE-TOP</option>
+					<option value="uk-transition-slide-bottom">TPL_FEUERWEHRJ4_SLIDESHOW-OVERLAY-MOVE-BOTTOM</option>
+				</field>
+				<field name="slideshowRatio" type="text" default="16:9" label="TPL_FEUERWEHRJ4_SLIDESHOWRATIO" filter="string" />
+				<field name="slideshowIntervall" type="text" default="3500" label="TPL_FEUERWEHRJ4_SLIDESHOWINTERVALL" filter="string" />
 			</fieldset>
 		</fields>
 	</config>
